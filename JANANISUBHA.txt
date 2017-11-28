@@ -1,0 +1,121 @@
+PRODUCTION:
+create table if not exists ins_production(emp_name  varchar(255),emp_id bigint(20) primary key(emp_id),date DATETIME,wages_per_hour  float(8,2),no._of_working_Hours  int(20),total_wages  float(8,2)); 
+Insert into ins_production values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_wages) from ins_production ;
+
+
+RESEARCH AND DEVELOPMENT:
+Create table if not exists ins_R_D(emp_name varchar(255),emp_id  bigint(20) primary key(emp_id),date DATETIME,wages_per_hour float(8,2),no._of_working_hours  int(20),total_wages  float(8,2)); 
+Insert into ins_production values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_wages) from ins_R_D ;
+
+        
+ACCOUNT&&FINANCING:
+create table if not exists ins_acc_fin(emp_name  varchar(255),   emp_id  bigint(20)  primary key(emp_id),date DATETIME,wages_per_hour float(8,2),no._of_working_hours  int(20),total_wages float(8,2)); 
+Insert into ins_production values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_wages) from ins_acc_fin ;
+
+
+HUMAN RESOURCES AND MANAGEMENT:
+Create table  not exists ins_hr(emp_name varchar(255),emp_id  bigint(20) primary key(emp_id),date DATETIME,wages_per_hour float(8,2),no._of_working_hours  int(20),total_wages float(8,2)); 
+Insert into ins_production values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_wages) from ins_hr ;
+
+        
+MARKETING:
+create table if not exists ins_marketing(emp_name  varchar(255),emp_id bigint(20) primary key(emp_id),date  DATETIME,wages_per_hour  float(8,2),no._of_working_hours  int(20),total_wages  float(8,2),); 
+Insert into ins_production values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_wages) from ins_marketing ;
+
+
+INDUSTRY:
+create table if not exists insdustry(dept_name  varchar(255),dept_id   bigint(20)  primary key(emp_id),date  DATETIME,total_amount  float(8,2)); 
+Insert into insdustry values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from insdustry ;
+
+WATER:
+create table if not exists bi_water(amount   bigint(20),date DATETIME,amount_per_litre  float(8,2),no._of_litre int(20),total_cost   float(8,2)); 
+Insert into bi_water values(400000,’01-04-2017:01:20:04’,10,5,250);
+Select sum(Total_cost) from bi_water ;
+
+
+ELECTRICITY:
+create table if not exists bi_elec(amount  bigint(20),date DATETIME,amount_per_meter float(8,2),no._of_meter  bigint(20),total_cost  float(8,2)); 
+Insert into bi_elec values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_cost) from bi_elec ;
+
+
+        
+RAW MATERIALS:
+create table if not exists bi_raw(amount  bigint(20),date  DATETIME,amount_per_ton  float(8,2),no._of_ton  bigint(20),total_cost  float(8,2)); 
+Insert into bi_raw values(1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_cost) from bi_raw ;
+
+    
+        
+OTHER REQUIREMENTS:    
+create table if not exists bi_others(item_name varchar(255),item_id bigint(20) primarykey(emp_id),date  DATETIME,amount_per_item  float(8,2),no._of_items int(20),total_amount float(8,2)); 
+Insert into bi_others  values(’xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from bi_others ;
+
+BASIC INVESTMENT:
+create table if not exists basic_invest(bi_name varchar(20),bi_id  bigint(20),date   DATETIME,total_amount  float(8,2)); 
+Insert into basic_invest values(400000,’01-04-2017:01:20:04’,10,5,250);
+Select sum(Total_amount) from basic_invest ;
+
+
+DAMAGED PRODUCT:
+create table if not exists damages(product_name  varchar(255),prod_id  bigint(20)  primary key(emp_id),date  DATETIME,total_amount  float(8,2)); 
+Insert into damages values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from insdustry ;
+
+
+
+OUTPUT:
+
+
+REMAINING UNSOLD:
+create table if not exists si_rem(product_name  varchar(255),prod_id  bigint(20) primary key(prod_id),date  DATETIME,total_amount float(8,2)); 
+Insert into si_rem values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from si_rem ;
+
+PRODUCT SOLD:
+create table if not exists si_sold(product_name   varchar(255),prod_id  bigint(20)  primary key(prod_id),date  DATETIME,total_amount float(8,2)); 
+Insert into si_sold values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from si_sold ;
+
+
+ONLINE PRODUCT REGISTER:
+create table if not exists si_on(product_name  varchar(255),prod_id bigint(20),primary key(emp_id),date DATETIME,total_amount  float(8,2)); 
+Insert into si_on values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from si_on ;
+
+
+SALES:
+create table if not exists sales(dept_name   varchar(255),dept_id  bigint(20),primary key(emp_id),date DATETIME,total_amount float(8,2)); 
+Insert into si_on values(‘xxx’,1234,’01-04-2017:01:20:04’,50,5,250);
+Select sum(Total_amount) from sales ;
+
+
+        
+
+
+
+        
+
+
+
+
+        
+
+
+
+        
+
+
+
+        
+
+
+        
+
